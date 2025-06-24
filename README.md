@@ -1,69 +1,135 @@
-# Տհíѵɑɑყ.Ɗєv - Team Portfolio Website
+<div align="center">
 
-Welcome to the official repository for **Shivaay.dev**, the portfolio website for a passionate team of B.Tech students: Avinash, Neha, and Deepak. This project showcases our skills, projects, and insights into the world of web development and design.
+# 🚀 Տհíѵɑɑყ.Ɗєv - Professional Team Portfolio
 
-![Shivaay.dev Screenshot](https://socialify.git.ci/hey-avi/shivaay.dev-portfolio/png?font=Jost&language=1&name=1&pattern=Charlie+Brown&theme=Auto)
+![shivaay](https://socialify.git.ci/hey-avi/shivaay/image?font=Jost&language=1&name=1&pattern=Charlie+Brown&theme=Auto)
 
-## ✨ Features
+### *Building Tomorrow's Web Solutions Today*
 
--   **Modern & Responsive Design**: A clean, mobile-first design that looks great on all devices.
--   **Light & Dark Mode**: Seamless theme switching for user comfort.
--   **Dynamic Portfolio**: Showcase of projects with tag-based filtering.
--   **Engaging Blog**: A collection of articles and insights on tech and design.
--   **Server-Side Contact Form**: A functional contact form using Next.js Server Actions.
--   **PWA Ready**: Optimized for a native app-like experience with offline capabilities.
--   **Team Showcase**: Detailed profiles for each team member.
--   **Built with Best Practices**: Clean code, accessible components, and optimized for performance.
+Welcome to **Shivaay**, the cutting-edge portfolio website showcasing the expertise of a dynamic team of B.Tech students: **Avinash**, **Neha**, and **Deepak**. This platform demonstrates our collective skills in modern web development, innovative design, and full-stack engineering.
 
-## 🚀 Tech Stack
+</div>
 
-This project is built with a modern, performant, and developer-friendly tech stack:
+## ✨ Key Features
 
--   **Framework**: [Next.js](https://nextjs.org/) (with App Router)
--   **Language**: [TypeScript](https://www.typescriptlang.org/)
--   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
--   **UI Components**: [ShadCN UI](https://ui.shadcn.com/)
--   **Icons**: [Lucide React](https://lucide.dev/)
--   **PWA**: [@ducanh2912/next-pwa](https://www.npmjs.com/package/@ducanh2912/next-pwa)
--   **Deployment**: Configured for Firebase App Hosting
+- 🎨 **Modern & Responsive Design**: Mobile-first approach with elegant UI/UX
+- 🌓 **Theme Support**: Seamless light/dark mode switching
+- 📱 **PWA Ready**: Native app-like experience with offline capabilities
+- 🎯 **Dynamic Portfolio**: Interactive project showcase with advanced filtering
+- 📝 **Tech Blog**: Comprehensive articles on development and design
+- 📧 **Smart Contact System**: Server-side form handling with validation
+- 👥 **Team Profiles**: Detailed member showcases with skills and achievements
+- ⚡ **Performance Optimized**: Built with modern best practices and SEO-friendly
+- 🔒 **Type-Safe**: Full TypeScript implementation for robust development
 
-## 📦 Getting Started
+## �️ Technology Stack
 
-To run this project locally, follow these steps:
+<div align="center">
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/hey-avi/shivaay.dev.git
-    cd shivaay.dev
-    ```
+| Category | Technologies |
+|----------|-------------|
+| **Frontend Framework** | Next.js 14+ (App Router) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS |
+| **UI Components** | ShadCN UI |
+| **Icons** | Lucide React |
+| **PWA** | @ducanh2912/next-pwa |
+| **Deployment** | Firebase App Hosting |
+| **AI Integration** | Google Genkit |
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+</div>
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
+## � Quick Start
 
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Git
 
-## 📂 Project Structure
+### Installation
 
--   `src/app/`: Contains all the routes and pages using the Next.js App Router.
--   `src/components/`: Reusable React components used throughout the application (UI elements, layout parts, sections).
--   `src/lib/`: Utility functions, action handlers (`actions.ts`), and constant data (`constants.ts`).
--   `src/hooks/`: Custom React hooks.
--   `public/`: Static assets, including images, icons, and the `manifest.json`.
--   `tailwind.config.ts`: Configuration for Tailwind CSS.
--   `next.config.ts`: Configuration for Next.js, including PWA settings.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/hey-avi/shivaay.git
+   cd shivaay
+   ```
 
-## 🧑‍💻 The Team
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
--   **Avinash**: Lead Developer & Strategist
--   **Neha**: Frontend Developer & UI/UX Enthusiast
--   **Deepak**: Backend Developer
+3. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-This website is a testament to our collaborative spirit and our passion for building meaningful digital solutions. Thank you for checking it out!
-# shivaay
+4. **Open your browser**
+   
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## � Project Architecture
+
+```
+shivaay/
+├── 📁 src/
+│   ├── 📁 app/              # Next.js App Router pages
+│   │   ├── 📁 (main)/       # Main application routes
+│   │   ├── layout.tsx       # Root layout
+│   │   └── page.tsx         # Home page
+│   ├── 📁 components/       # Reusable UI components
+│   │   ├── 📁 layout/       # Layout components
+│   │   ├── 📁 sections/     # Page sections
+│   │   └── 📁 ui/           # Base UI components
+│   ├── 📁 lib/              # Utilities and configurations
+│   ├── 📁 hooks/            # Custom React hooks
+│   └── 📁 ai/               # AI integration files
+├── 📁 public/               # Static assets
+├── 📁 docs/                 # Documentation
+└── 📄 Configuration files   # Next.js, Tailwind, TypeScript configs
+```
+
+## 👨‍💻 Meet the Team
+
+<div align="center">
+
+| ![Avinash](https://github.com/hey-avi.png?size=100) | ![Neha](https://via.placeholder.com/100x100/4F46E5/ffffff?text=NH) | ![Deepak](https://via.placeholder.com/100x100/10B981/ffffff?text=DK) |
+|:---:|:---:|:---:|
+| **[Avinash](https://github.com/hey-avi)** | **Neha** | **Deepak** |
+| *Lead Developer & Architect* | *Frontend Developer & Designer* | *Backend Developer & DevOps* |
+| Full-stack development, System design | UI/UX Design, React expertise | Server architecture, Database design |
+
+</div>
+
+---
+
+<div align="center">
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌟 Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+**Built with ❤️ by Team Shivaay**
+
+</div>
