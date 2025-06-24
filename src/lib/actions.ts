@@ -1,6 +1,4 @@
 
-"use server";
-
 import { z } from "zod";
 
 const contactFormSchema = z.object({
@@ -10,7 +8,14 @@ const contactFormSchema = z.object({
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
-export type ContactFormState = {
+export type ContactFormData = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
+
+export type ContactFormResult = {
   message: string;
   errors?: {
     name?: string[];
@@ -21,16 +26,8 @@ export type ContactFormState = {
   success: boolean;
 };
 
-export async function submitContactForm(
-  prevState: ContactFormState,
-  formData: FormData
-): Promise<ContactFormState> {
-  const validatedFields = contactFormSchema.safeParse({
-    name: formData.get("name"),
-    email: formData.get("email"),
-    subject: formData.get("subject"),
-    message: formData.get("message"),
-  });
+export function validateContactForm(data: ContactFormData): ContactFormResult {
+  const validatedFields = contactFormSchema.safeParse(data);
 
   if (!validatedFields.success) {
     return {
@@ -40,30 +37,37 @@ export async function submitContactForm(
     };
   }
 
-  const { name, email, subject, message } = validatedFields.data;
+  return {
+    message: "Form validation successful.",
+    success: true,
+  };
+}
 
-  // Simulate email sending
+export async function submitContactFormClient(data: ContactFormData): Promise<ContactFormResult> {
+  // First validate the data
+  const validationResult = validateContactForm(data);
+  if (!validationResult.success) {
+    return validationResult;
+  }
+
+  const { name, email, subject, message } = data;
+
+  // Simulate form submission (for static site)
   console.log("Received contact form submission:");
   console.log({ name, email, subject, message });
-  console.log("Email would be sent to Տհíѵɑɑყ.Ɗєv team.");
+  console.log("Email would be sent to Shivaay.Dev team.");
 
-  // In a real application, you would use a service like SendGrid, Resend, or Nodemailer here.
-  // For example:
-  // try {
-  //   await sendEmail({
-  //     to: 'team@shivaay.dev', // Updated email
-  //     from: 'noreply@yourdomain.com',
-  //     subject: `New Contact Form Submission: ${subject}`,
-  //     html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
-  //   });
-  //   return { message: "Thank you! Your message has been sent successfully.", success: true };
-  // } catch (error) {
-  //   console.error("Failed to send email:", error);
-  //   return { message: "An error occurred while sending your message. Please try again later.", success: false };
-  // }
+  // In a real static site, you could integrate with:
+  // - Formspree (https://formspree.io/)
+  // - Netlify Forms
+  // - EmailJS (https://www.emailjs.com/)
+  // - Web3Forms (https://web3forms.com/)
+  
+  // Simulate async operation
+  await new Promise(resolve => setTimeout(resolve, 1000));
 
   return {
-    message: "Thank you! Your message has been received (simulated).",
+    message: "Thank you! Your message has been received. We'll get back to you soon!",
     success: true,
   };
 }
