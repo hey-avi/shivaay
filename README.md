@@ -122,7 +122,7 @@ We welcome contributions! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is proprietary software owned by Team Shivaay. All rights reserved - see the [LICENSE](LICENSE) file for details.
 
 ## 🌟 Show your support
 
